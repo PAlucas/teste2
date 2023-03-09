@@ -1,0 +1,105 @@
+.bus-seat {
+  background-size: 100% !important;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  color: #fff;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-weight: 600;
+  width: 30px;
+  display: inline-block;
+}
+
+.poltrona-seleccionada {
+  background: url('../../../../img/pick-seat.png') 100% no-repeat;
+  /* background-color: mediumblue; */
+  cursor: pointer;
+  text-align: center;
+}
+
+.poltrona-feminina.poltrona-libre {
+  background-image: url('../../../../img/free-seat-feminina.png');
+}
+
+.poltrona-feminina.poltrona-ocupada {
+  background-image: url('../../../../img/busy-seat-feminina.png');
+}
+
+.poltrona-feminina.poltrona-seleccionada {
+  background-image: url('../../../../img/pick-seat-feminina.png');
+}
+
+.poltrona-libre {
+  background: url('../../../../img/free-seat.png') 100% no-repeat;
+  cursor: pointer;
+}
+
+.poltrona-ocupada {
+  background: url('../../../../img/busy-seat.png') 100% no-repeat;
+  cursor: default;
+}
+
+.poltrona-interditada {
+  background: url('../../../../img/banned-seat.png') 100% no-repeat;
+  cursor: default;
+}
+
+.poltrona-vacia {
+  cursor: default;
+  height: 5px;
+  width: 5px;
+}
+
+.poltrona-seleccionada label,
+.poltrona-libre label {
+  margin: 0;
+  cursor: pointer;
+}
+
+.poltrona-ocupada label,
+.poltrona-vacia label {
+  margin: 0;
+  cursor: default;
+}
+
+.bus-line {
+  width: 35px;
+  display: inline-block;
+}
+
+.bus-seats {
+  padding: 15px;
+}
+
+.bus-full {
+  padding: 2% 7%;
+}
+
+.bus-front {
+  background: url('../../../../img/bus-image-front.png') 100% no-repeat;
+  background-size: contain;
+  padding: 100px 0px;
+  display: inline-block;
+}
+
+.bus-middle {
+  background: url('../../../../img/bus-image-middle.png') 100%;
+  background-size: contain;
+  padding: 1px 0px;
+  display: inline-block;
+}
+
+.bus-back {
+  background: url('../../../../img/bus-image-back.png') no-repeat;
+  background-size: contain;
+  padding: 100px 0px;
+  display: inline-block;
+}
+
+.label-bus {
+  font-size: 12px;
+}
