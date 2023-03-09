@@ -14,7 +14,7 @@ RUN yarn install --frozen-lockfile
 COPY . .
 
 # Build da aplicação
-RUN yarn build
+CMD ["yarn", "start"]
 
 # Use a imagem do nginx como base
 FROM nginx:latest
