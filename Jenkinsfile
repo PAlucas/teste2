@@ -1,21 +1,16 @@
 pipeline {
-    agent any
+  agent any
 
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+  stages {
+    stage('Build') {
+      steps {
+        sh 'docker build -t vendas .'
+      }
     }
+    stage('Deploy') {
+      steps {
+        sh 'docker run -d -p 8000:8000 vendas'
+      }
+    }
+  }
 }
