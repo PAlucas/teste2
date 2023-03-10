@@ -14,7 +14,7 @@ function App() {
   return (
 
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename='/VendaWeb'>
         <Switch>
           <Route exact path="/" component={HomeEcommerce} />
         </Switch>
