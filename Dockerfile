@@ -28,7 +28,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Copie o aplicativo construído para o diretório padrão do nginx
 COPY --from=0 /app/build /usr/share/nginx/html
 
-# Exponha a porta 80 para o tráfego da web
+# Exponha a porta 8000 para o tráfego da web
 EXPOSE 8000
 
 # Inicie o servidor web do Nginx quando o contêiner for iniciado
